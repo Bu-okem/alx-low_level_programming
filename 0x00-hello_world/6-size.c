@@ -18,8 +18,8 @@ int main(void)
 	printf("Size of a char: %lu bytes\n", (unsigned long)sizeof(charType));
 	printf("Size of a int: %lu bytes\n", (unsigned long)sizeof(intType));
 	printf("Size of a long int: %lu bytes\n", (unsigned long)sizeof(longintType));
-	printf("Size of a long long int: %lu bytes\n," (unsigned long)sizeof(longlongintType));
-	printf("Size of a float: %lu bytes\n," (unsigned long)sizeof(floatType));
+	printf("Size of a long long int: %lu bytes\n", (unsigned long)sizeof(longlongintType));
+	printf("Size of a float: %lu bytes\n", (unsigned long)sizeof(floatType));
 
 	return(0)
 }
