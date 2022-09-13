@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <unistd.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -9,8 +9,12 @@
 
 int main(void)
 {
-	char word[] = "_putchar";
+	char word[8] = "_putchar";
+	int n;
 
-	printf(word[]);
-	printf("\n");
+	for (n = 0; n < 8; n++)
+		_putchar(word[i]);
+	_putchar('\n');
+
+	return (0);
 }
