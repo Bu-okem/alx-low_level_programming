@@ -8,7 +8,7 @@
 int main(void)
 {
 	int n;
-	long int fibonacci[98];
+	unsigned long long int fibonacci[98];
 
 	fibonacci[0] = 1;
 	fibonacci[1] = 2;
@@ -19,9 +19,9 @@ int main(void)
 	{
 		fibonacci[n] = fibonacci[n - 1] + fibonacci[n - 2];
 		if (n == 97)
-			printf("%ld\n", fibonacci[n]);
+			printf("%llu\n", fibonacci[n]);
 		else
-			printf("%ld, ", fibonacci[n]);
+			printf("%llu, ", fibonacci[n]);
 	}
 
 	return (0);
