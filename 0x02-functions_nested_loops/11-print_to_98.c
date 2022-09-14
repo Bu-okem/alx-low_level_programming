@@ -19,10 +19,10 @@ void print_to_98(int c)
 
 			if (c == 98)
 				continue;
-			printf(', ');
+			printf(", ");
 		}
 
-		printf('\n');
+		printf("\n");
 
 	}
 	else
@@ -34,9 +34,9 @@ void print_to_98(int c)
 			if (c == 98)
 				continue;
 			
-			printf('\n');
+			printf(", ");
 		}
 
-		printf('\n');
+		printf("\n");
 	}
 }
