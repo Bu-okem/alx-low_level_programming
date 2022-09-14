@@ -15,7 +15,7 @@ int main(void)
 
 	printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
 
-	for (n = 2; n < 50; n++)
+	for (n = 2; n < 98; n++)
 	{
 		fibonacci[n] = fibonacci[n - 1] + fibonacci[n - 2];
 		if (n == 97)
