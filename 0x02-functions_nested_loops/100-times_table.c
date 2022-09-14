@@ -30,7 +30,7 @@ void print_times_table(int n)
  * Return: Nothing
  */
 
-void puformat(int n)
+void putformat(int n)
 {
 	if (n <= 9)
 	{
