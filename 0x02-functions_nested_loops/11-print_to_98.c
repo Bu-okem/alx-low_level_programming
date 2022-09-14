@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,7 +9,7 @@
  * Return: Nothing
  */
 
-void print_to_98(void)
+void print_to_98(int c)
 {
 	if (c <= 98)
 	{
