@@ -2,6 +2,7 @@
 
 /**
  * _isupper - Entry point
+ * Description - function that checks for uppercase character
  * @c: input
  * Return: 1 if c is uppercase or 0 otherwise
  */
