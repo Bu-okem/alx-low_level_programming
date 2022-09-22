@@ -1,4 +1,5 @@
 #include "main.h"
+int check_seperators(char a);
 
 /**
  * cap_string - Entry point
