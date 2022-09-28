@@ -3,7 +3,7 @@
 /**
  * factorial - Entry point
  * Description - function that returns the factorial of a given number
- * @s: integer input
+ * @n: integer input
  * Return: factorial of n
  */
 
