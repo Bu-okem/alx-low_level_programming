@@ -1,0 +1,17 @@
+#include "main.h"
+
+/**
+ * factorial - Entry point
+ * Description - function that returns the factorial of a given number
+ * @s: integer input
+ * Return: factorial of n
+ */
+
+int factorial(int n)
+{
+	if (n < 0)
+		return (-1);
+	if (n <= 1)
+		return (1);
+	return (n * factorial(n - 1));
+}
