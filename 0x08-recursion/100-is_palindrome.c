@@ -52,7 +52,7 @@ int rev_string(char *s, int len)
 		return (1);
 	else if (*s == *(s + len - 1))
 	{
-		return rev_string(s + 1, len - 2);
+		return (rev_string(s + 1, len - 2));
 	}
 	else
 		return (0);
