@@ -20,8 +20,8 @@ int main(int a, char **b)
 	}
 	else
 	{
-		num1 = atoi(a[1]);
-		num2 = atoi(a[2]);
+		num1 = atoi(b[1]);
+		num2 = atoi(b[2]);
 		result = num1 * num2;
 		printf("%d\n", result);
 		return (0);
