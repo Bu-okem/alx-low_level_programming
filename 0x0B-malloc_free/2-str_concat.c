@@ -52,7 +52,7 @@ char *str_concat(char *s1, char *s2)
 			new_str[n] = *s2;
 			s2++;
 		}
-		new_str[n] = '\0';
-		return (starts1);
 	}
+	new_str[n] = '\0';
+	return (starts1);
 }
