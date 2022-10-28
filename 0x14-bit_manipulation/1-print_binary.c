@@ -9,7 +9,7 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned int flag = 0, max = 32768;
+	unsigned int flag = 0, max = 327680;
 
 	if (n == '0')
 	{
