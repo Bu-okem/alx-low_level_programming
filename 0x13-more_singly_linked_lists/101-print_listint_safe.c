@@ -6,24 +6,50 @@
  *
  * Return: pointer to the first node of the reverse list
  */
+
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t i = 0;
-	const listint_t *temp, *node;
+	size_t count = 0;
+	size_t index = 0;
+	listint_t const **array;/* A */
 
-	node = head;
-	while (node != NULL)
+	array = malloc(sizeof(listint_t *) * 1024);
+	if (!array)
+		exit(98);
+	unsigned int i = 0;
+	unsigned int flag = 0;
+
+	while (head != NULL)/* B */
 	{
-		printf("[%p] %d\n", (void *)node, node->n);
-		temp = node;
-		node = node->next;
-		i++;
-		if (temp <= node)
+		for (i = 0; i < count; i++)/* C*/
 		{
-			printf("-> [%p] %d\n", (void *)node, node->n);
-			break;
+			if (head == array[i])/* D */
+			{
+				flag = 1;
+				index = i;
+				break;
+			}
+			else
+				flag = 0;
 		}
-	}
-	return (i);
-}
 
+		if (flag == 1)/* E */
+			break;
+		array[count] = head;
+		head = head->next;
+		count++;
+	}
+
+	i = 0;
+	while (i < count)/* F */
+	{
+		printf("[%p] %d\n", (void *)array[i], array[i]->n);
+		i++;
+	}
+	if (flag == 1)/* G */
+	{
+		printf("-> [%p] %d\n", (void *)array[index], array[index]->n);
+	}
+	free(array);
+	return (count);
+}
