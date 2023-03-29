@@ -16,7 +16,7 @@ size_t print_listint_safe(const listint_t *head)
 	array = malloc(sizeof(listint_t *) * 1024);
 	if (!array)
 		exit(98);
-	unsigned int i = 0;
+	i unsigned int = 0;
 	unsigned int flag = 0;
 
 	while (head != NULL)/* B */
