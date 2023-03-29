@@ -12,8 +12,8 @@ void hash_table_print(const hash_table_t *ht)
 	int nodes_counter = 0;
 	unsigned long int x;
 	if (!ht)
-		return;
 
+		return;
 	printf("{");
 	for (x = 0; x < ht->size; x++)
 	{
