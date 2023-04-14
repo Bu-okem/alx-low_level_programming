@@ -14,7 +14,8 @@
  * Description: Singly linked list node structure.
  */
 
-typedef struct listint_s {
+typedef struct listint_s
+{
 	int n;
 	size_t index;
 	struct listint_s *next;
